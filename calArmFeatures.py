@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 
 
-# 计算臂的特征向量
+
 class ArmFeatures:
     def find_item_feature(self, item, item_features, d):
         position = list(item_features['item_id'].values)
