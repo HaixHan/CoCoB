@@ -1,16 +1,9 @@
-#实验用户的个数
 testUsersNum = 10
-#每个用户的实验次数
 rounds = 3
-#实验迭代的次数
 testIters = 3
-#臂的数量
 armNum = 50
-#推荐列表的长度
 recomLength =10
 alpha = 15
-#设置阈值
 gap = 0.8
-#设置服务器名称
 name = "235"
 algorithm = "NewIdea"

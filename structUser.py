@@ -8,7 +8,7 @@ class Users:
         self.d = d
         self.user_parameters = user_parameters
 
-    # 根据user_cluster信息，初始化用户参数
+
     def cal_user_cluster_parameters(self):
         user_id = self.user_id
         user_num = len(user_id)
@@ -23,7 +23,7 @@ class Users:
         user_parameters['b'] = list2
         return user_parameters
 
-    # 查找用户的参数
+
     def find_user_parameters(self, u):
         user_parameters = self.user_parameters
         user_index = user_parameters[user_parameters['user_id'] == u].index[0]
@@ -31,7 +31,7 @@ class Users:
         b = user_parameters.at[user_index, 'b']
         return M, b
 
-    # 计算多个user的参数之和
+
     def caculate_cluster_parameters(self, users):
         d = self.d
         sum_M = np.identity(d)
