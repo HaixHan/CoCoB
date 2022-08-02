@@ -2,7 +2,7 @@ import smtplib
 from email.mime.text import MIMEText
 
 def send_email():
-    From = '1144047125@qq.com'
+    From = 'XX@qq.com'
     To = From
     pwd = 'qfmnvxbudzzijbaf'
     # login
