@@ -63,12 +63,12 @@ def findNeighborhood(users, u, gap):
 
 
 def Neighbor(users, u, round, gap):
-    size = len(data[data['user_id'] == u])  # 用户u的推荐记录长度
+    size = len(data[data['user_id'] == u])  
     u_sequence = data[data['user_id'] == u].reset_index(drop=True)
     u_interactive_sequence = u_sequence.iloc[round, :]
     Hit = [0]  # hit items at i rounds for u
-    res = [0] * arm_num  # 每个动作的结果值
-    recom_len = list(set(list(data['item_id'][data['user_id'] == u].values))) # 用户交互的物品个数（未去重）
+    res = [0] * arm_num  
+    recom_len = list(set(list(data['item_id'][data['user_id'] == u].values)))
     arms = recom_len
     F1 = 0
     recall = 0
