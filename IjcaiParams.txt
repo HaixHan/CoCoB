@@ -1,0 +1,3 @@
+#特征向量的维度
+dimension = 6
+dataset = "IJCAI-2015"
